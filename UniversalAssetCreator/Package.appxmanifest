@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
+  <Identity Name="awsomedevsigner.UniversalAssetCreator" Publisher="CN=B76B4867-8291-4342-8D6C-C3DB439B3071" Version="1.1.9.0" />
+  <mp:PhoneIdentity PhoneProductId="448dce54-7f14-4f3d-90f4-84d967c9e082" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>Universal Asset Creator</DisplayName>
+    <PublisherDisplayName>awsomedevsigner</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.scale-100_black.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="UniversalAssetCreator.App">
+      <uap:VisualElements DisplayName="Universal Asset Creator" Square150x150Logo="Assets\150x150Logo.scale-100_black.png" Square44x44Logo="Assets\44x44Logo.scale-100_black.png" Description="UniversalAssetCreator" BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\310x150Logo.scale-100_black.png" ShortName="UWP Asset Creator" Square310x310Logo="Assets\310x310Logo.scale-100_black.png" Square71x71Logo="Assets\71x71Logo.Scale-100_black.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+            <uap:ShowOn Tile="wide310x150Logo" />
+            <uap:ShowOn Tile="square310x310Logo" />
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="Assets\SplashScreen.scale-100_black.png" BackgroundColor="black" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <uap:Capability Name="picturesLibrary" />
+  </Capabilities>
+</Package>
