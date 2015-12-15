@@ -8,7 +8,7 @@ namespace Model
 {
     public enum ThemeChosen
     {
-        Ligth,
+        Light,
         Dark
     }
 }
